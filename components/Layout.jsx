@@ -156,7 +156,7 @@ const Layout = ({ children }) => {
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/exten72">
+                  <Link href="/exten70/">
                     <a >
                       <em className="icon-list"></em>
                       <span data-localize="sidebar.nav.WIDGETS">
@@ -166,7 +166,7 @@ const Layout = ({ children }) => {
                   </Link>
                 </li>
                 <li className="">
-                  <Link href="/payments">
+                  <Link href="/exten25/">
                     <a title="Add Pastorist">
                       <em className="icon-map"></em>
                       <span data-localize="sidebar.nav.WIDGETS">
