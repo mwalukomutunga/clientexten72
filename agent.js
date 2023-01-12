@@ -16,7 +16,7 @@ const notify = (msg) =>
 // axios.defaults.baseURL = isProd
 //   ? "https://apistaging.acreafrica.com"
 //   : "http://localhost:4100/";
-axios.defaults.baseURL ='http://157.230.190.229:6005';
+axios.defaults.baseURL ='https://72bima.acreafrica.com';
 axios.interceptors.request.use((config) => {
   const state = store.getState();
 
