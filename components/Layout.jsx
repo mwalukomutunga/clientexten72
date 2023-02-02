@@ -144,7 +144,16 @@ const Layout = ({ children }) => {
                   <span data-localize="sidebar.heading.COMPONENTS">Pages</span>
                 </li>
 
-               
+                <li className="">
+                  <Link href="/main">
+                    <a >
+                      <em className="icon-list"></em>
+                      <span data-localize="sidebar.nav.WIDGETS">
+                    Main
+                      </span>
+                    </a>
+                  </Link>
+                </li>
                 <li className="">
                   <Link href="/exten72">
                     <a >
@@ -155,7 +164,7 @@ const Layout = ({ children }) => {
                     </a>
                   </Link>
                 </li>
-                <li className="">
+                {/* <li className="">
                   <Link href="/exten70/">
                     <a >
                       <em className="icon-list"></em>
@@ -164,7 +173,7 @@ const Layout = ({ children }) => {
                       </span>
                     </a>
                   </Link>
-                </li>
+                </li> */}
                 <li className="">
                   <Link href="/exten25/">
                     <a title="Add Pastorist">

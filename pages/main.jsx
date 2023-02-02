@@ -4,7 +4,7 @@ import { Item, RequiredRule } from "devextreme-react/form";
 import { Form, Label } from "devextreme-react/data-grid";
 import TextBox from "devextreme-react/text-box";
 import requests from "../agent";
-const page = "https://72bima.acreafrica.com/api/Claims/";
+const page = "https://bimamain.acreafrica.com/api/BimaResults";
 import { LoadPanel } from 'devextreme-react/load-panel';
 
 const columns = [
@@ -19,7 +19,7 @@ const columns = [
   "longitude"
 ];
 
-const Sales = () => {
+const MainPage = () => {
   const [data, setData] = useState([]);
   const [inputs, setInputs] = useState({});
   const [isLoading, setLoading] = useState(false);
@@ -75,4 +75,4 @@ const Sales = () => {
   );
 };
 
-export default Sales;
+export default MainPage;
