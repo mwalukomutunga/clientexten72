@@ -5,18 +5,32 @@ import { Form, Label } from "devextreme-react/data-grid";
 import TextBox from "devextreme-react/text-box";
 import requests from "../agent";
 const page = "https://bimamain.acreafrica.com/api/BimaResults";
+// const page = "http://localhost:7009/api/BimaResults";
+
 import { LoadPanel } from 'devextreme-react/load-panel';
 
 const columns = [
-  "phoneNumber",  
-  "reportedDamage",
-  "primaryCause",
-  "farmerCode",
-  "extendOfDamage",
-  "acceptedCashBack",
-  "createdAt",
+  "crop",
+  "fullName",
+  "idNo", 
+  "mobilePhone",
+  "mpesaNo",
+  "gender",
+  "agree",
+  "uniqueCode",
+  "session",
   "latitude",
-  "longitude"
+  "longitude",  
+  "month",
+  "week",
+  "region",
+  "county",
+  "subCounty",
+  "ward",
+  "village",
+  "amount",  
+  "createdAt",
+ 
 ];
 
 const MainPage = () => {
@@ -46,7 +60,7 @@ const MainPage = () => {
       <div className="col-xl-12">
         <div className="card">
           <div className="card-body">
-            <h4 className="header-title mb-3"> Extention 72 </h4>
+            <h4 className="header-title mb-3">Main Extention</h4>
             <LoadPanel
               shadingColor="rgba(0,0,0,0.4)"
 
@@ -59,8 +73,8 @@ const MainPage = () => {
             <DataTable
               columns={columns}
               dataSource={data}          
-              title="Extention 72"
-              Page ="Claims"
+              title="Main"
+              Page ="Main"
               handlesave={handleSave}
               handleDelete={handleDelete}
               handleUpdate={handleUpdate}
